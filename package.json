@@ -7,8 +7,8 @@
         "funlog": "bin/log.js"
     },
     "scripts": {
-        "exe1": "bin/log.js entrada.js",
-        "exe2": "bin/log.js entrada.js -o salida.js",
+        "exec1": "bin/log.js entrada.js",
+        "exec2": "bin/log.js entrada.js -o salida.js",
         "out": "node salida.js",
         "test": "mocha test/test.mjs",
         "cov": "nyc npm test"
