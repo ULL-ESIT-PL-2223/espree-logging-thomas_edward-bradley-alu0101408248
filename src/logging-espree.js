@@ -10,15 +10,17 @@ export async function transpile(inputFile, outputFile) {
     console.log(output);
     return;
   }
+  console.log(`Output in file: ${outputFile}`)
   await fs.writeFile(outputFile, output);
 }
 
 export function addLogging(code) {
-  const ast = espree.parse(code);
+  const ast = espree.parse(code, { ecmaVersion: 12, loc: true });
   estraverse.traverse(ast, {
     enter: function(node, parent) {
       if (node.type === 'FunctionDeclaration' ||
-        node.type === 'FunctionExpression') {
+        node.type === 'FunctionExpression' ||
+        node.type === 'ArrowFunctionExpression') {
         addBeforeCode(node);
       }
     }
@@ -28,7 +30,9 @@ export function addLogging(code) {
 
 function addBeforeCode(node) {
   const name = node.id ? node.id.name : '<anonymous function>';
-  const beforeCode = "console.log('Entering " + name + "()');";
-  const beforeNodes = espree.parse(beforeCode).body;
+  const parameters = node.params.map(p => '${ ' + p.name + ' }').join(', ');
+  const beforeCode = "console.log('Entering " + name + `(` + parameters + `) At line ${node.loc.start.line}');`;
+  const beforeNodes = espree.parse(beforeCode, { ecmaVersion: 12}).body;
   node.body.body = beforeNodes.concat(node.body.body);
 }
+
