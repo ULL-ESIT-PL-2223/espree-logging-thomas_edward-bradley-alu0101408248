@@ -8,8 +8,7 @@
     },
     "scripts": {
         "exec1": "bin/log.js entrada.js",
-        "exec2": "bin/log.js entrada.js -o salida.js",
-        "out": "node salida.js",
+        "exec2": "bin/log.js entrada.js -o salida.js; node salida.js",
         "test": "mocha test/test.mjs",
         "cov": "nyc npm test"
     },
