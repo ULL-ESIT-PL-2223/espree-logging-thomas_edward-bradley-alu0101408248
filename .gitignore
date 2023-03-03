@@ -4,5 +4,5 @@ node_modules
 alus
 escodegen/
 output.js
-.nyc_output
+.nyc_output/
 .DS_Store
