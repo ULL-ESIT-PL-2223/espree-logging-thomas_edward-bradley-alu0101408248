@@ -48,7 +48,9 @@ Se ha implementado commander para incorporar las opciones -h / --help, -V / --ve
 
 ## Tests and Covering
 
-...
+Se añadio un test ademas, el cual el programa tambien supera:  
+
+Aqui esta una captura de la pagina mostrando los resultados de los tests:   
 
 ## Module in npm
 
@@ -56,7 +58,7 @@ Para ello se ha creado una cuenta en npm y se ha hecho login con esta desde una 
 Despues, el package.json tiene una script "publish" para subir el modulo a dicha cuenta.  
 
 Aqui se encuentra el link al paquete npm del proyecto:   
-[https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme][https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme]  
+[@alu0101408248/espree-logging](https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme)  
 
 # JSDOC to Markdown
 
