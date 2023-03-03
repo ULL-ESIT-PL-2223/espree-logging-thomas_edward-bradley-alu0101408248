@@ -2,7 +2,7 @@
 
 Thomas Edward Bradley  
 alu0101408248  
-16/02/23 
+03/03/23 
 
 ## Resumen de lo aprendido
 
