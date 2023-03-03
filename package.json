@@ -1,6 +1,6 @@
 {
-    "name": "espree-logging-solution",
-    "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
+    "name": "@alu0101408248/espree-logging",
+    "author": "Thomas Edward Bradley <alu0101408248@ull.edu.es>",
     "description": "Adds logs to javascript code",
     "type": "module",
     "bin": {
@@ -11,7 +11,8 @@
         "exec2": "bin/log.js entrada.js -o salida.js; node salida.js",
         "test": "mocha test/test.mjs",
         "cov": "c8 npm test",
-        "docs": "npx c8 --reporter=html --reporter=text --report-dir docs mocha"
+        "docs": "npx c8 --reporter=html --reporter=text --report-dir docs mocha",
+        "d2m": "jsdoc2md src/logging-espree.js"
     },
     "dependencies": {
         "acorn": "^8.8.2",
@@ -26,6 +27,7 @@
         "@types/escodegen": "^0.0.7",
         "@types/estraverse": "^5.1.2",
         "documentation": "*",
+        "jsdoc-to-markdown": "^8.0.0",
         "mocha": "^10.2.0",
         "nyc": "^15.1.0"
     }
