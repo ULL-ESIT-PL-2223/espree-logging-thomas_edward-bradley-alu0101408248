@@ -1,5 +1,9 @@
 # Práctica Espree logging
 
+Thomas Edward Bradley  
+alu0101408248  
+16/02/23 
+
 ## Resumen de lo aprendido
 
 Para inicializar el repositorio, se tiene que escribir por linea de comandos:  
@@ -37,28 +41,36 @@ foo(1, 'wut', 3);
 ## CLI con [Commander.js](https://www.npmjs.com/package/commander)
 
 Se ha implementado commander para incorporar las opciones -h / --help, -V / --version y -o / --output:  
+![commander](docs/commander.png)  
 
 ## Reto 1: Soportar funciones flecha
 
-...
+Para soportar funciones flecha, solo hace falta incluir que estas se detecten dentro del bucle for en addLogging():
+![flechas](docs/flechas.png)  
 
 ## Reto 2: Añadir el número de línea
 
-...
+Para imprimir el numero de linea tenemos que meter el resultado de "node.loc.start.line" dentro del console log que 
+le pasamos (esta imprimira la misma):  
+![linea](docs/linea.png)  
 
 ## Tests and Covering
 
 Se añadio un test ademas, el cual el programa tambien supera:  
+![tests](docs/tests.png)  
 
 Aqui esta una captura de la pagina mostrando los resultados de los tests:   
+![pagina](docs/pagina.png)  
+[Pagina Web](https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme)  
 
 ## Module in npm
 
 Para ello se ha creado una cuenta en npm y se ha hecho login con esta desde una terminal.   
 Despues, el package.json tiene una script "publish" para subir el modulo a dicha cuenta.  
+![npm](docs/npm.png)  
 
 Aqui se encuentra el link al paquete npm del proyecto:   
-[@alu0101408248/espree-logging](https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme)  
+[@alu0101408248/espree-logging](https://ull-esit-pl-2223.github.io/espree-logging-thomas_edward-bradley-alu0101408248/)  
 
 # JSDOC to Markdown
 
@@ -110,5 +122,7 @@ Adds text after a function detailing it's name, parameters and the line at which
 | Param | Type | Description |
 | --- | --- | --- |
 | node | <code>\*</code> | Node of the function to analyze |
+
+<br />
 
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-f4981d0f882b2a3f0472912d15f9806d57e124e0fc890972558857b51b24a6f9.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=10307982)
