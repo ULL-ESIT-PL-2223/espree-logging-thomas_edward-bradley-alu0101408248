@@ -45,7 +45,7 @@ Se ha implementado commander para incorporar las opciones -h / --help, -V / --ve
 
 ## Reto 1: Soportar funciones flecha
 
-Para soportar funciones flecha, solo hace falta incluir que estas se detecten dentro del bucle for en addLogging():
+Para soportar funciones flecha, solo hace falta incluir que estas se detecten dentro del bucle for en addLogging():  
 ![flechas](docs/flechas.png)  
 
 ## Reto 2: Añadir el número de línea
@@ -61,7 +61,7 @@ Se añadio un test ademas, el cual el programa tambien supera:
 
 Aqui esta una captura de la pagina mostrando los resultados de los tests:   
 ![pagina](docs/pagina.png)  
-[Pagina Web](https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme)  
+[Pagina Web](https://ull-esit-pl-2223.github.io/espree-logging-thomas_edward-bradley-alu0101408248/)  
 
 ## Module in npm
 
@@ -70,7 +70,7 @@ Despues, el package.json tiene una script "publish" para subir el modulo a dicha
 ![npm](docs/npm.png)  
 
 Aqui se encuentra el link al paquete npm del proyecto:   
-[@alu0101408248/espree-logging](https://ull-esit-pl-2223.github.io/espree-logging-thomas_edward-bradley-alu0101408248/)  
+[@alu0101408248/espree-logging](https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme)  
 
 # JSDOC to Markdown
 
