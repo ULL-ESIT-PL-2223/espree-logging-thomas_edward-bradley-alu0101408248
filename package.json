@@ -10,7 +10,8 @@
         "exec1": "bin/log.js entrada.js",
         "exec2": "bin/log.js entrada.js -o salida.js; node salida.js",
         "test": "mocha test/test.mjs",
-        "cov": "c8 npm test"
+        "cov": "c8 npm test",
+        "docs": "npx c8 --reporter=html --reporter=text --report-dir docs mocha"
     },
     "dependencies": {
         "acorn": "^8.8.2",
