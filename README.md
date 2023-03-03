@@ -4,7 +4,7 @@ Thomas Edward Bradley
 alu0101408248  
 03/03/23 
 
-## Resumen de lo aprendido
+## Instalar dependencias
 
 Para inicializar el repositorio, se tiene que escribir por linea de comandos:  
 ```bashrc
