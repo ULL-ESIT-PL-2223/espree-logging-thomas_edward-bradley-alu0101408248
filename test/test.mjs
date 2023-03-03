@@ -4,6 +4,8 @@ import * as fs from "fs/promises";
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
+// npx nyc --reporter=html --reporter=text --report-dir docs mocha
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 import Tst from './test-description.mjs';
 
