@@ -12,7 +12,8 @@
         "test": "mocha test/test.mjs",
         "cov": "c8 npm test",
         "docs": "npx c8 --reporter=html --reporter=text --report-dir docs mocha",
-        "d2m": "jsdoc2md src/logging-espree.js"
+        "d2m": "jsdoc2md src/logging-espree.js",
+        "publish": "npm publish --access=public"
     },
     "dependencies": {
         "acorn": "^8.8.2",

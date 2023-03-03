@@ -2,7 +2,10 @@
 
 ## Resumen de lo aprendido
 
-...
+Para inicializar el repositorio, se tiene que escribir por linea de comandos:  
+```bashrc
+npm i
+```
 
 ## Indicar los valores de los argumentos
 
@@ -33,7 +36,7 @@ foo(1, 'wut', 3);
 
 ## CLI con [Commander.js](https://www.npmjs.com/package/commander)
 
-...
+Se ha implementado commander para incorporar las opciones -h / --help, -V / --version y -o / --output:  
 
 ## Reto 1: Soportar funciones flecha
 
@@ -46,6 +49,14 @@ foo(1, 'wut', 3);
 ## Tests and Covering
 
 ...
+
+## Module in npm
+
+Para ello se ha creado una cuenta en npm y se ha hecho login con esta desde una terminal.   
+Despues, el package.json tiene una script "publish" para subir el modulo a dicha cuenta.  
+
+Aqui se encuentra el link al paquete npm del proyecto:   
+[https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme][https://www.npmjs.com/package/@alu0101408248/espree-logging?activeTab=readme]  
 
 # JSDOC to Markdown
 
